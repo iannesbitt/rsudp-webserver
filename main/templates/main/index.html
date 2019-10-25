@@ -3,9 +3,9 @@
 
 {% for img in images %}
     <div>
-	<p style="font-family:monospace;color:#ccc">{{ img }}</p>
+        <p style="font-family:monospace;color:#ccc">{{ img }} - <a href="?del={{ img }}" style="color:red">Delete</a></p>
         <a href="/media/screenshots/{{ img }}"><img width="70%" src="/media/screenshots/{{ img }}"></a>
-	<br><br><br>
+        <br><br><br>
     </div>
 {% endfor %}
 
